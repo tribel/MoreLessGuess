@@ -7,7 +7,7 @@ import model.Model;
 
 /**
  * 
- * @author Артем
+ * @author Tribel
  *
  */
 public class Controller {

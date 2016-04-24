@@ -2,7 +2,7 @@ package model;
 
 /**
  * 
- * @author Артем
+ * @author Tribel
  *
  */
 public class Model {

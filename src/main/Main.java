@@ -6,7 +6,7 @@ import controller.Controller;
 
 /**
  * 
- * @author Артем
+ * @author Tribel
  *
  */
 public class Main {

@@ -2,7 +2,7 @@ package view;
 
 /**
  * 
- * @author Артем
+ * @author Tribel
  *
  */
 public class View {
