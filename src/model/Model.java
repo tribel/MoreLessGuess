@@ -7,14 +7,17 @@ package model;
  */
 public class Model {
 
+	private static int START_LOWER_RANGE = 0;
+	private static int START_UPPER_RANGE = 100;
+	
 	private int number;
 	private int minRange;
 	private int maxRange;
 	private int attemptAmount;
 
 	public Model() {
-		this.maxRange = 0;
-		this.maxRange = 100;
+		this.maxRange = START_LOWER_RANGE;
+		this.maxRange = START_UPPER_RANGE;
 		this.number = rand(minRange, maxRange);
 	}
 
@@ -25,7 +28,7 @@ public class Model {
 	 * @return random {@code int} generate number.
 	 */
 	
-	protected int rand(int min, int max) {
+	protected final int rand(final int min, final int max) {
 		return min + (int) (Math.random() * (max - min + 1));
 	}
 
@@ -35,44 +38,44 @@ public class Model {
 	 * @see Integer.MAX_VALUE
  	 */
 	
-	protected int rand() {
+	protected final int rand() {
 		return (int) (Math.random() * Integer.MAX_VALUE);
 	}
 
-	public void addOneAttempt() {
+	public final void addOneAttempt() {
 		this.attemptAmount++;
 	}
 	
-	public int getNumber() {
+	public final int getNumber() {
 		return number;
 	}
 
-	public void setNumber(int number) {
+	public final void setNumber(final int number) {
 		this.number = number;
 	}
 
-	public int getMinRange() {
+	public final int getMinRange() {
 		return minRange;
 	}
 
-	public void setMinRange(int minRange) {
+	public final void setMinRange(final int minRange) {
 		this.minRange = minRange;
 	}
 
-	public int getMaxRange() {
+	public final int getMaxRange() {
 		return maxRange;
 	}
 
-	public void setMaxRange(int maxRange) {
+	public final void setMaxRange(final int maxRange) {
 		this.maxRange = maxRange;
 	}
 
-	public int getAttemptAmount() {
+	public final int getAttemptAmount() {
 		return attemptAmount;
 	}
 
 	@Override
-	public String toString() {
+	public final String toString() {
 		return "Model [number=" + number + ", minRange=" + minRange
 				+ ", maxRange=" + maxRange + "]";
 	}
